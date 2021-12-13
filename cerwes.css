@@ -1,0 +1,12 @@
+#button {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+
+    margin-top: 300px;
+    margin-left: 740px;
+
+    background-color: black;
+}
