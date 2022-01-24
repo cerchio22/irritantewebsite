@@ -6,7 +6,13 @@
     cursor: pointer;
 
     margin-top: 300px;
-    margin-left: 740px;
+    margin-left: 660px;
 
     background-color: black;
+}
+
+#block {
+    width: 1000px;
+    height: 1000px;
+    background-color: #000000;
 }
