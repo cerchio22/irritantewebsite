@@ -1,3 +1,86 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+/*navbar*/
+nav {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 10vh;
+    background-color: #73528E;
+    letter-spacing: 19px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    font-family: 'Syne Tactile', cursive;
+    border-radius: 25px;
+}
+
+.nav-links :hover {
+    cursor: pointer;
+    color:  #73528E;
+    transition: color 0.05s ease-out;
+}
+
+.logo {
+    letter-spacing: -2px;
+    font-size: 30px;
+    color: #947B4C;
+    font-family: 'Syne Tactile', cursive;
+}
+
+.logo :hover {
+    cursor: pointer;
+    color: #C2F970;
+    text-decoration: none;
+}
+
+a:link {
+    text-decoration: none;
+  }
+  
+  a:visited {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: none;
+  }
+  
+  a:active {
+    text-decoration: none;
+  }
+  
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 30%
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    color: #ED3185;
+    text-decoration: none;
+    letter-spacing: 10px;
+    font-weight: bold;
+    font-size: 30px;
+}
+/*EINDE NAVBAR*/
+
 #button {
     width: 20px;
     height: 20px;
@@ -15,4 +98,121 @@
     width: 1000px;
     height: 1000px;
     background-color: #000000;
+}
+
+.black-rectangle {
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    color: white;
+}
+
+.gif {
+    display: none;
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  
+}
+
+.gif-show {
+    display: block;
+}
+
+.border {
+    position: fixed;
+    top: 0;
+    width: 1000px;
+    height: 50px;
+
+    top: 590px;
+    right: 0px;
+    bottom: 0px;
+    left: 250px;
+
+    border-radius: 45px;
+    background-color: burlywood;
+}
+
+.house {
+    position: fixed;
+    top: 0;
+
+    top: 567px;
+    right: 0px;
+    bottom: 0px;
+    left: 500px;
+
+    width: 50px;
+    height:50px;
+}
+
+.click {
+    position: fixed;
+    top: 0;
+
+    top: 10px;
+    right: 0px;
+    bottom: 0px;
+    left: 300px;
+}
+
+#loader1 {
+    position: fixed;
+    top: 0;
+
+    top: 520px;
+    right: 0px;
+    bottom: 0px;
+    left: 470px;
+}
+
+#loader1 {
+    border: 16px solid #E77423; /* was grijs */
+    border-top: 16px solid ; /*was blauw*/
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 1s linear infinite; 
+}
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#loader2 {
+    border: 16px solid #E77423; /* was grijs */
+    border-top: 16px solid #FFBF1F; /*was blauw*/
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 12s linear infinite;
+}
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.button1 {
+    position: fixed;
+    top: 0;
+
+    width: 50px;
+    height: 50px;
+
+    top: 567px;
+    right: 0px;
+    bottom: 0px;
+    left: 500px;
+    cursor: pointer;
+    border: hidden;
+    background:url(home.png);
+}
+
+#button:hover {
+    cursor: pointer;
 }
