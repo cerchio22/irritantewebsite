@@ -9,9 +9,4 @@ function myFunction() {
   // myNewWindow.document.write('<div class="black-rectangle">Dit is een test</div>');
   let gif_element = document.querySelector('.gif');
   gif_element.classList.add('gif-show');
-  
-}
-
-function myFunction1() {
-  document.visibilityState("loader1");
 }
