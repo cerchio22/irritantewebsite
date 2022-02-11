@@ -10,3 +10,12 @@ function myFunction() {
   let gif_element = document.querySelector('.gif');
   gif_element.classList.add('gif-show');
 }
+
+function myFunction1() {
+  document.getElementById("loader1").style.visibility = "hidden";
+}
+
+function myFunction3() {
+ location.href = "index.html";
+ if (click == 2) {}
+}
