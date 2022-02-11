@@ -12,7 +12,7 @@ body {
     height: 100vh;
 }
 
-/*navbar*/
+/*NAVBAR*/
 nav {
     display:flex;
     justify-content: space-around;
@@ -27,6 +27,93 @@ nav {
     border-radius: 25px;
 }
 
+.blink1 {  
+    -webkit-animation: 2s linear infinite condemned_blink_effect; 
+    animation: 0.1s linear infinite condemned_blink_effect;
+}
+
+@-webkit-keyframes condemned_blink_effect {
+0% {
+  visibility: hidden;
+}
+50% {
+  visibility: hidden;
+}
+100% {
+  visibility: visible;
+}
+}
+
+@keyframes condemned_blink_effect {
+0% {
+  visibility: hidden;
+}
+50% {
+  visibility: hidden;
+}
+100% {
+  visibility: visible;
+}
+}
+
+.blink2 {  -webkit-animation: 2s linear infinite condemned_blink_effect;
+    animation: 0.4s linear infinite condemned_blink_effect;
+    }
+    
+    
+    @-webkit-keyframes condemned_blink_effect {
+    0% {
+      visibility: hidden;
+    }
+    50% {
+      visibility: hidden;
+    }
+    100% {
+      visibility: visible;
+    }
+    }
+    
+    @keyframes condemned_blink_effect {
+    0% {
+      visibility: hidden;
+    }
+    50% {
+      visibility: hidden;
+    }
+    100% {
+      visibility: visible;
+    }
+    }
+
+.blink3 {  -webkit-animation: 2s linear infinite condemned_blink_effect; 
+        animation: 0.05s linear infinite condemned_blink_effect;
+        }
+        
+        
+        @-webkit-keyframes condemned_blink_effect {
+        0% {
+          visibility: hidden;
+        }
+        50% {
+          visibility: hidden;
+        }
+        100% {
+          visibility: visible;
+        }
+        }
+        
+        @keyframes condemned_blink_effect {
+        0% {
+          visibility: hidden;
+        }
+        50% {
+          visibility: hidden;
+        }
+        100% {
+          visibility: visible;
+        }
+        }
+
 .nav-links :hover {
     cursor: pointer;
     color:  #73528E;
@@ -38,6 +125,34 @@ nav {
     font-size: 30px;
     color: #947B4C;
     font-family: 'Syne Tactile', cursive;
+
+  -webkit-animation: 2s linear infinite condemned_blink_effect; 
+  animation: 2.5s linear infinite condemned_blink_effect;
+        }
+        
+        
+    @-webkit-keyframes condemned_blink_effect {
+        0% {
+          visibility: hidden;
+        }
+        50% {
+          visibility: hidden;
+        }
+        100% {
+          visibility: visible;
+        }
+        }
+        
+        @keyframes condemned_blink_effect {
+        0% {
+          visibility: hidden;
+        }
+        50% {
+          visibility: hidden;
+        }
+        100% {
+          visibility: visible;
+        }
 }
 
 .logo :hover {
@@ -79,11 +194,12 @@ a:link {
     font-weight: bold;
     font-size: 30px;
 }
+
 /*EINDE NAVBAR*/
 
 #button {
     width: 20px;
-    height: 20px;
+    height: 22px;
     border-radius: 10px;
     border: none;
     cursor: pointer;
@@ -108,6 +224,7 @@ a:link {
 }
 
 .gif {
+    position: fixed;
     display: none;
     z-index: 999;
     position: absolute;
@@ -115,8 +232,8 @@ a:link {
     right: 0;
     bottom: 0;
     left: 0;
-  
-}
+
+  }
 
 .gif-show {
     display: block;
@@ -210,9 +327,30 @@ a:link {
     left: 500px;
     cursor: pointer;
     border: hidden;
-    background:url(home.png);
+    background:url(img/home.png);
 }
 
 #button:hover {
     cursor: pointer;
+}
+
+.button2 {
+    position: fixed;
+    top: 0;
+
+    width: 512px;
+    height: 523px;
+
+    top:0px;
+    right:0px;
+    bottom:0px;
+    left:300px;
+
+    cursor: pointer;
+    border: hidden;
+    background:url(click.png);
+}
+
+.container {
+  position: fixed;
 }
