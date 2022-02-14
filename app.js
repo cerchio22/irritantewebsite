@@ -1,6 +1,7 @@
 let myNewWindow;
 let myOldWindow = window;
 
+
 function myFunction() {
   alert("zet je geluid aan, jij banaan");
   // myNewWindow = window.open("", "_self");
@@ -16,6 +17,5 @@ function myFunction1() {
 }
 
 function myFunction3() {
- location.href = "index.html";
- if (click == 2) {}
+ location.href = "irritant.html";
 }

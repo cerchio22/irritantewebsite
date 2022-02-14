@@ -18,7 +18,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     min-height: 10vh;
-    background-color: #73528E;
+    background-color: #ED3185;
     letter-spacing: 19px;
     width: 100%;
     position: fixed;
@@ -116,14 +116,14 @@ nav {
 
 .nav-links :hover {
     cursor: pointer;
-    color:  #73528E;
+    color:  #ED3185;
     transition: color 0.05s ease-out;
 }
 
 .logo {
     letter-spacing: -2px;
     font-size: 30px;
-    color: #947B4C;
+    color: #73835D;
     font-family: 'Syne Tactile', cursive;
 
   -webkit-animation: 2s linear infinite condemned_blink_effect; 
@@ -157,7 +157,7 @@ nav {
 
 .logo :hover {
     cursor: pointer;
-    color: #C2F970;
+    color: #73835D;
     text-decoration: none;
 }
 
@@ -188,7 +188,7 @@ a:link {
 }
 
 .nav-links a {
-    color: #ED3185;
+    color: #E4FF1A;
     text-decoration: none;
     letter-spacing: 10px;
     font-weight: bold;
@@ -271,6 +271,7 @@ a:link {
     position: fixed;
     top: 0;
 
+    cursor: pointer;
     top: 10px;
     right: 0px;
     bottom: 0px;
@@ -334,23 +335,101 @@ a:link {
     cursor: pointer;
 }
 
-.button2 {
-    position: fixed;
-    top: 0;
-
-    width: 512px;
-    height: 523px;
-
-    top:0px;
-    right:0px;
-    bottom:0px;
-    left:300px;
-
-    cursor: pointer;
-    border: hidden;
-    background:url(click.png);
-}
-
 .container {
   position: fixed;
+}
+
+.repeat {
+  background-size: cover;
+  height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  font-family: Tahoma, Arial, sans-serif;
+  color: #06D85F;
+  margin: 80px 0;
+}
+
+.box {
+  width: 40%;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.2);
+  padding: 35px;
+  border: 2px solid #fff;
+  border-radius: 20px/50px;
+  background-clip: padding-box;
+  text-align: center;
+}
+
+.button {
+  font-size: 1em;
+  padding: 10px;
+  color: #fff;
+  border: 2px solid #06D85F;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.button:hover {
+  background: #06D85F;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
 }
