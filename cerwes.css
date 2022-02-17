@@ -248,7 +248,7 @@ a:link {
     border: none;
     cursor: pointer;
 
-    margin-top: 300px;
+    margin-top: 0px;
     margin-left: 660px;
 
     background-color: black;
@@ -280,6 +280,7 @@ a:link {
   }
 
 .gif-show {
+    position: fixed;
     display: block;
 }
 
@@ -477,7 +478,14 @@ h1 {
 
 #video {
   position: fixed;
-  display:-moz-popup;
   z-index: 999;
+  visibility: ;
+  
+  width: 1536px;
+  height: 1093px;
 
+  margin-top: -855px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: -250px;
 }
