@@ -477,6 +477,7 @@ h1 {
 
 #video {
   position: fixed;
+  display:-moz-popup;
   z-index: 999;
 
 }
