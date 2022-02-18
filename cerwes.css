@@ -479,7 +479,7 @@ h1 {
 #video {
   position: fixed;
   z-index: 999;
-  visibility: ;
+  visibility: hidden;
   
   width: 1536px;
   height: 1093px;
@@ -488,4 +488,20 @@ h1 {
   margin-right: 0px;
   margin-bottom: 0px;
   margin-left: -250px;
+}
+
+#hier {
+  position: fixed;
+  z-index: 999;
+  background-color: aliceblue;
+  border: hidden;
+  cursor: pointer;
+
+  width: 50px;
+  height: 50px;
+
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
 }

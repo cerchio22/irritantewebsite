@@ -17,7 +17,7 @@ function myFunction1() {
 }
 
 function myFunction2() {
-  document.getElementById("").style.visibility = "visible";
+  document.getElementById("video").style.visibility = "visible";
 }
 
 
