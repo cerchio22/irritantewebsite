@@ -18,6 +18,7 @@ function myFunction1() {
 
 function myFunction2() {
   document.getElementById("video").style.visibility = "visible";
+  document.getElementById("hier").style.visibility = "hidden";
 }
 
 
